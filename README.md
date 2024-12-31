@@ -1,6 +1,9 @@
 # Description
 
-irisLookup is a Python-based tool used to scan usernames for existing accounts.
+irisLookup is a lightweight Python-based tool used to scan usernames for existing accounts. 
+
+
+Simply enter your target username & review the URLs neatly written to your terminal.
 
 # Quickstart
 
