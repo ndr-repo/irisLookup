@@ -1,5 +1,4 @@
 from curl_cffi import requests
-proxies = {"https": "http://localhost:8080"}
 print("  ")
 print("discoveryOps: Iris Username Lookup")
 print(" ")
