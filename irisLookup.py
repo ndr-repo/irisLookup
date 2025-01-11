@@ -1,15 +1,22 @@
 import requests
-print("  ")
-print("discoveryOps: Iris Username Lookup")
-print(" ")
-print("Created by Gabriel H. @weekndr_sec")
+import sys
+print(' ')
+print('discoveryOps: Iris Username Lookup')
+print(' ')
+print('Created by Gabriel H. @weekndr_sec')
 print("https://github.com/ndr-repo")
-print(" ")
+print(' ')
 print(" 'Knowledge is powerful, be careful how you use it!' ")
-print(" ")
+print(' ')
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'}
-targetUser = input("Enter the target username: ")
-print("  ")
+if len(sys.argv) < 2:
+        print('Please include the target username. ')
+        print(' ')
+        print('syntax: python irisLookup.py <username> ')
+        print(' ')
+        exit()
+targetUN = sys.argv[1]
+targetUser = str(targetUN)
 financeUrls = {
      "https://venmo.com/u/"+targetUser,
      "https://cash.app/$"+targetUser,
