@@ -23,6 +23,7 @@ socialUrls = {
      "https://rumble.com/c/"+targetUser,
      "https://instagram.com/"+targetUser
 }
+datingUrls ={"https://tinder.com/@"+targetUser}
 devUrls ={
      "https://pypi.org/user/"+targetUser,
      "https://www.npmjs.com/~"+targetUser,
@@ -58,7 +59,16 @@ for socialUrl in socialUrls:
     if response.status_code == 403: 
         print(" - Request denied by host: ", reqUrl, end='\n')
 print(' ')
-print('Category: Developer Sites: ')
+print('Category: Online Dating ')
+for datingUrl in datingUrls:
+    response = requests.get(datingUrl, headers=headers)
+    reqUrl = response.request.url
+    if response.status_code == 200:
+        print(" - Profile found: ", reqUrl, end='\n')
+    if response.status_code == 403: 
+        print(" - Request denied by host: ", reqUrl, end='\n')
+print(' ')
+print('Category: Developer Sites ')
 for devUrl in devUrls:
     response = requests.get(devUrl, headers=headers)
     reqUrl = response.request.url
@@ -67,7 +77,7 @@ for devUrl in devUrls:
     if response.status_code == 403: 
         print(" - Request denied by host: ", reqUrl, end='\n')
 print(' ')
-print('Category: Misc: ')
+print('Category: Misc ')
 for miscUrl in miscUrls:
     response = requests.get(miscUrl, headers=headers)
     reqUrl = response.request.url
