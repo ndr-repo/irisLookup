@@ -2,6 +2,7 @@
 
 irisLookup is a lightweight Python-based tool used to scan usernames for existing accounts. 
 
+Intended for identity management use cases such as finding phishing accounts impersonating a client.
 
 Simply enter your target username & review the URLs neatly written to your terminal.
 
