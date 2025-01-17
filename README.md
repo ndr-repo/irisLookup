@@ -18,6 +18,4 @@ python irisLookup.py
 ```
 # Demonstration
 
-![irisLookup_11jan24](https://github.com/user-attachments/assets/00364f1a-c65a-4b77-a813-bc92076a9c4c)
-
-![elonTinder](https://github.com/user-attachments/assets/fc442f28-6cca-4bbf-80f5-f94f9d3ba12f)
+![402296212-2de10596-9f83-4f9f-9b37-fc93c8adecee](https://github.com/user-attachments/assets/4bec5e57-6417-44e0-a2d7-3061395e4bf2)
